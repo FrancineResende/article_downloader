@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+    </head>
+    <body>
+    <style type = "text/css">
+        body {background-color:#F0F0F0}
+        div {overflow: hidden; position: absolute;}
+        #top {top:0;left:0;width:100%;height:50px;font-size:14px} /* 40px */
+        #content {top:50px;left:0;bottom:0;width:100%}
+        p {margin:0;padding:10px}
+        a {font-size:12px;font-family:sans-serif}
+        a.target {font-weight:normal;color:green;margin-left:10px}
+        a.reopen {font-weight:normal;color:blue;text-decoration:none;margin-left:10px}
+        iframe {width:100%;height:100%}
+        
+        p.agitation {padding-top:5px;font-size:20px;text-align:center}
+        p.agitation a {font-size:20px;text-decoration:none;color:green}
+
+        .banner {position:absolute;z-index:9999;top:400px;left:0px;width:300px;height:225px;
+                 border: solid 1px #ccc; padding: 5px;
+                 text-align:center;font-size:18px}
+        .banner img {border:0}
+        
+        p.donate {padding:0;margin:0;padding-top:5px;text-align:center;background:green;height:40px}
+        p.donate a {color:white;font-weight:bold;text-decoration:none;font-size:20px}
+
+        #save {position:absolute;z-index:9999;top:180px;left:90px;width:210px;height:36px;
+                 border-radius: 4px; border: solid 1px #ccc; padding: 5px;
+                 text-align:center;font-size:18px;background:#F0F0F0;color:#333}
+
+        #save a {text-decoration:none;color:white;font-size:inherit;color:#666}
+
+        #save p { margin: 0; padding: 0; margin-top: 8px}
+
+        #reload {position:absolute;z-index:9999;top:240px;left:90px;width:210px;height:36px;
+                 border-radius: 4px; border: solid 1px #ccc; padding: 5px;
+                 text-align:center;font-size:18px;background:#F0F0F0;color:#333}
+
+        #reload a {text-decoration:none;color:white;font-size:inherit;color:#666}
+
+        #reload p { margin: 0; padding: 0; margin-top: 8px}
+        
+        
+        #donate {position:absolute;z-index:9999;top:170px;right:16px;width:220px;height:36px;
+                 border-radius: 4px; border: solid 1px #ccc; padding: 5px;
+                 text-align:center;font-size:18px;background:white;color:#333}
+        
+        #donate a {text-decoration:none;color:green;font-size:inherit}
+
+        #donatein {position:absolute;z-index:9999;top:220px;right:16px;width:220px;height:36px;
+                 border-radius: 4px; border: solid 1px #ccc; padding: 5px;
+                 text-align:center;font-size:18px;background:green;color:#333}
+
+        #donatein a {text-decoration:none;color:white;font-size:inherit}
+        
+        #banner {position:absolute;z-index:9999;top:50%;left:45px;width:250px;height:250px; padding: 0; border: solid 1px white; border-radius: 4px}
+        
+    </style>
+    
+        
+    
+    <script type = "text/javascript">
+        window.onload = function() {
+            var url = document.getElementById('url');
+            if (url.innerHTML.length > 77)
+                url.innerHTML = url.innerHTML.substring(0,77) + '...';
+        };
+    </script>
+    <div id = "top">
+        
+        <p class="agitation" style = "padding-top:12px">
+            Страничка проекта Sci-Hub в социальных сетях →  <a target="_blank" href="https://vk.com/sci_hub">vk.com/sci_hub</a>
+        </p>
+        
+    </div>
+    
+    <div id = "content">
+        <iframe src = "http://dabamirror.sci-hub.cc/3bf6a25756eff569bbe06c36b94102f3/vijayachari2015.pdf" id = "pdf"></iframe>
+    </div>
+    
+    <div id = "donate">
+        <p><a target = "_blank" href = "//sci-hub.cc/donate">поддержать проект &rarr;</a></p>
+    </div>
+    <div id = "donatein">
+        <p><a target = "_blank" href = "//sci-hub.cc/donate">support the project &rarr;</a></p>
+    </div>
+    <div id = "save">
+        <p><a href = # onclick = "location.href='http://dabamirror.sci-hub.cc/3bf6a25756eff569bbe06c36b94102f3/vijayachari2015.pdf?download=true'">⇣ сохранить статью</a></p>
+    </div>
+    <div id = "reload">
+        <p><a href = "//sci-hub.cc/reload/10.1080/21645515.2015.1047117" target = "_blank">&#8635; скачать заново</a></p>
+    </div>
+    
+        
+    <!-- Yandex.Metrika counter --><div style="display:none;"><script type="text/javascript">(function(w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter10183018 = new Ya.Metrika({id:10183018, enableAll: true, ut:"noindex", webvisor:false}); } catch(e) { } }); })(window, "yandex_metrika_callbacks");</script></div><script src="//mc.yandex.ru/metrika/watch.js" type="text/javascript" defer="defer"></script><noscript><div><img src="//mc.yandex.ru/watch/10183018?ut=noindex" style="position:absolute; left:-9999px;" alt="" /></div></noscript><!-- /Yandex.Metrika counter -->
+    </body>
+</html>

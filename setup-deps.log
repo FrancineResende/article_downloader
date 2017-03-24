@@ -1,0 +1,92 @@
+Sorry, we have to rerun the configuration dialog for CPAN.pm due to
+some missing parameters. Configuration will be written to
+ <</home/francine/Documents/Busca_artigos/edirect/_cpan/CPAN/MyConfig.pm>>
+
+ <install_help>
+
+Warning: You do not have write permission for Perl library directories.
+
+To install modules, you need to configure a local Perl library directory or
+escalate your privileges.  CPAN can help you by bootstrapping the local::lib
+module or by configuring itself to use 'sudo' (if available).  You may also
+resolve this problem manually if you need to customize your setup.
+
+What approach do you want?  (Choose 'local::lib', 'sudo' or 'manual')
+ [manual] manual
+
+Your 'urllist' is already configured. Type 'o conf init urllist' to change it.
+
+Autoconfiguration complete.
+
+commit: wrote '/home/francine/Documents/Busca_artigos/edirect/_cpan/CPAN/MyConfig.pm'
+
+You can re-run configuration any time with 'o conf init' in the CPAN shell
+Fetching with LWP:
+http://www.perl.org/CPAN/authors/01mailrc.txt.gz
+Reading '/home/francine/Documents/Busca_artigos/edirect/_cpan/sources/authors/01mailrc.txt.gz'
+............................................................................DONE
+Fetching with LWP:
+http://www.perl.org/CPAN/modules/02packages.details.txt.gz
+Reading '/home/francine/Documents/Busca_artigos/edirect/_cpan/sources/modules/02packages.details.txt.gz'
+  Database was generated on Thu, 23 Mar 2017 16:41:02 GMT
+..............
+  New CPAN.pm version (v2.16) available.
+  [Currently running version is v2.11]
+  You might want to try
+    install CPAN
+    reload cpan
+  to both upgrade CPAN.pm and run the new version without leaving
+  the current session.
+
+
+..............................................................DONE
+Fetching with LWP:
+http://www.perl.org/CPAN/modules/03modlist.data.gz
+Reading '/home/francine/Documents/Busca_artigos/edirect/_cpan/sources/modules/03modlist.data.gz'
+DONE
+Writing /home/francine/Documents/Busca_artigos/edirect/_cpan/Metadata
+Running get for module 'local::lib'
+Fetching with LWP:
+http://www.perl.org/CPAN/authors/id/H/HA/HAARG/local-lib-2.000019.tar.gz
+Fetching with LWP:
+http://www.perl.org/CPAN/authors/id/H/HA/HAARG/CHECKSUMS
+Checksum for /home/francine/Documents/Busca_artigos/edirect/_cpan/sources/authors/id/H/HA/HAARG/local-lib-2.000019.tar.gz ok
+'YAML' not installed, will not store persistent state
+Running install for module 'Mozilla::CA'
+Fetching with LWP:
+http://www.perl.org/CPAN/authors/id/A/AB/ABH/Mozilla-CA-20160104.tar.gz
+Fetching with LWP:
+http://www.perl.org/CPAN/authors/id/A/AB/ABH/CHECKSUMS
+Checksum for /home/francine/Documents/Busca_artigos/edirect/_cpan/sources/authors/id/A/AB/ABH/Mozilla-CA-20160104.tar.gz ok
+Configuring A/AB/ABH/Mozilla-CA-20160104.tar.gz with Makefile.PL
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Mozilla::CA
+Writing MYMETA.yml and MYMETA.json
+  ABH/Mozilla-CA-20160104.tar.gz
+  /usr/bin/perl Makefile.PL INSTALLDIRS=site -- OK
+Running make for A/AB/ABH/Mozilla-CA-20160104.tar.gz
+cp lib/Mozilla/CA/cacert.pem blib/lib/Mozilla/CA/cacert.pem
+cp lib/Mozilla/CA.pm blib/lib/Mozilla/CA.pm
+cp mk-ca-bundle.pl blib/lib/Mozilla/mk-ca-bundle.pl
+Manifying 1 pod document
+  ABH/Mozilla-CA-20160104.tar.gz
+  /usr/bin/make -- OK
+Running make test
+PERL_DL_NONLAZY=1 "/usr/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/locate-file.t .. ok
+All tests successful.
+Files=1, Tests=3,  0 wallclock secs ( 0.03 usr  0.00 sys +  0.02 cusr  0.00 csys =  0.05 CPU)
+Result: PASS
+  ABH/Mozilla-CA-20160104.tar.gz
+  /usr/bin/make test -- OK
+Running make install
+Manifying 1 pod document
+Installing /home/francine/Documents/Busca_artigos/edirect/aux/lib/perl5/Mozilla/CA.pm
+Installing /home/francine/Documents/Busca_artigos/edirect/aux/lib/perl5/Mozilla/mk-ca-bundle.pl
+Installing /home/francine/Documents/Busca_artigos/edirect/aux/lib/perl5/Mozilla/CA/cacert.pem
+Installing /home/francine/Documents/Busca_artigos/edirect/aux/man/man3/Mozilla::CA.3pm
+Appending installation info to /home/francine/Documents/Busca_artigos/edirect/aux/lib/perl5/x86_64-linux-gnu-thread-multi/perllocal.pod
+  ABH/Mozilla-CA-20160104.tar.gz
+  /usr/bin/make install  -- OK
